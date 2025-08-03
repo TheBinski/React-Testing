@@ -1,3 +1,5 @@
+import { RoutingButton } from "~/routing-button/routing-button";
+
 export function Header() {
 
     function handleClick() {
@@ -12,8 +14,8 @@ export function Header() {
             </div>
             <div>
                 <button onClick={handleClick} className="header-button">Click Me!</button>
-                <button className="header-button">Home</button>
-                <button className="header-button">Other Page</button>
+                <RoutingButton buttonClassName="header-button" routeTo="/" buttonText="Home"/>
+                <RoutingButton buttonClassName="header-button" routeTo="/page2" buttonText="Other Page"/>
             </div>
         </div>
     );

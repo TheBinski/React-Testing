@@ -31,6 +31,10 @@ a {
   }
 }
 
+h1.home-content-text {
+  font-size: 48px;
+}
+
 button.header-button, input.header-searchBar {
   font-size: x-large;
   border: 3px solid grey;

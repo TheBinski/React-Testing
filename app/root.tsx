@@ -8,6 +8,7 @@ import {
 } from "react-router";
 
 import type { Route } from "./+types/root";
+import { Header } from "./header/header";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -42,7 +43,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <div className="Page">
+      <Header />
+      <Outlet />
+    </div>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
@@ -62,7 +68,8 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="pt-16 p-4 container mx-auto">
+    <div>
+      <Header/>
       <h1>{message}</h1>
       <p>{details}</p>
       {stack && (
@@ -70,6 +77,6 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
           <code>{stack}</code>
         </pre>
       )}
-    </main>
+    </div>
   );
 }

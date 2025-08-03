@@ -10,8 +10,8 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
   return (
-    <div className="Page">
-      <Header />
-    </div>
+   <div className="Home-Content">
+    <h1 className="home-content-text">This is where the Home page content goes!</h1>
+   </div>
   );
 }
