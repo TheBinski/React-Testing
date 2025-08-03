@@ -13,3 +13,45 @@ body {
     color-scheme: dark;
   }
 }
+
+.HeaderContainer {
+  padding: 12px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  font-size: xx-large;
+  text-decoration: underline;
+
+  &.Header-Header:hover {
+    color: blue;
+    cursor: pointer;
+  }
+}
+
+button.header-button, input.header-searchBar {
+  font-size: x-large;
+  border: 3px solid grey;
+  border-radius: 6px;
+  padding: 6px;
+
+  &:hover, &:focus {
+    border-color: lightgrey;
+    border-style: double;
+    color: white;
+  }
+}
+
+button.header-button {
+  margin: 0 12px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+input.header-searchBar {
+  color: lightgrey;
+}
