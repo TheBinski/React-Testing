@@ -31,7 +31,7 @@ a {
   }
 }
 
-h1.home-content-text {
+h1.home-content-text, h1.page2-content-text {
   font-size: 48px;
 }
 
