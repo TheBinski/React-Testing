@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+.page2-Content {
+    padding: 0 24px;
+}
+
+.FinalTextWrapper {
+    display: flex;
+    justify-content: center;
+
+    .FinalText {
+        font-size: xx-large;
+    }
+}
+
+.InputForm {
+    /* border: 6px dotted pink; */
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .settingsLabel {
+        font-size: large;
+        font-weight: 800;
+    }
+
+    .nameInputWrapper {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+
+        .nameInput {
+            padding: 6px;
+            font-size: large;
+            border: 2px solid darkgrey;
+            border-radius: 6px;
+            margin-top: 6px;
+
+            &:hover, &:focus {
+                border-color: lightgrey;
+                border-style: double;
+                color: white;
+            }
+        }  
+    }
+
+    .fontColorInputWrapper {
+        /* border: 2px dashed white; */
+    }
+
+    .inputNumberWrapper {
+        display: flex;
+        margin-top: 12px;
+
+        .red {
+            color: crimson;
+            margin-right: 29px;
+        }
+
+        .green {
+            color: green;
+            margin-right: 13px;
+        }
+
+        .blue {
+            color: lightskyblue;
+            margin-right: 25px;
+        }
+
+        input {
+            border: 2px solid darkgrey;
+            border-radius: 6px;
+            width: 62px;
+            padding: 0 6px;
+
+            &.redInput {
+                &:hover, &:focus {
+                    border-color: crimson;
+                    border-style: double;
+                    color: white;
+                }
+            }
+            &.greenInput {
+                &:hover, &:focus {
+                    border-color: green;
+                    border-style: double;
+                    color: white;
+                }
+            }
+            &.blueInput {
+                &:hover, &:focus {
+                    border-color: lightskyblue;
+                    border-style: double;
+                    color: white;
+                }
+            }
+        }
+    }
+}
