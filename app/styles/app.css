@@ -21,11 +21,11 @@ body {
   justify-content: space-evenly;
 }
 
-a {
+.Header-Header {
   font-size: xx-large;
   text-decoration: underline;
 
-  &.Header-Header:hover {
+  &:hover {
     color: blue;
     cursor: pointer;
   }

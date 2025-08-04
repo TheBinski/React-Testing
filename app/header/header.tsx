@@ -8,7 +8,7 @@ export function Header() {
 
     return (
         <div className="HeaderContainer">
-            <a className="Header-Header">I am the Header!</a>
+            <RoutingButton buttonClassName="Header-Header" routeTo="/" buttonText="I am the Header!"/>
             <div>
                 <input className="header-searchBar" type="text" placeholder="Fake Search Bar"></input>
             </div>
