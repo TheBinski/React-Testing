@@ -16,6 +16,7 @@ export function Header() {
                 <button onClick={handleClick} className="header-button">Click Me!</button>
                 <RoutingButton buttonClassName="header-button" routeTo="/" buttonText="Home"/>
                 <RoutingButton buttonClassName="header-button" routeTo="/page2" buttonText="Other Page"/>
+                <RoutingButton buttonClassName="header-button" routeTo="/page3" buttonText="The Other Other Page"/>
             </div>
         </div>
     );
