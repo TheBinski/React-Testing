@@ -35,6 +35,35 @@ h1.home-content-text {
   font-size: 48px;
 }
 
+.headerChangerWrapper {
+  margin: 24px;
+  display: flex;
+  justify-content: center;
+
+  .nameInput {
+    color: darkgrey;
+    border: 3px solid darkgrey;
+
+    &:hover, &:focus {
+      color: yellow;
+      border: 3px double yellow;
+    }
+  }
+
+  .nameInputButton {
+    color: darkgrey;
+    border: 3px solid darkgrey;
+
+    &:hover, &:focus {
+      color: yellow;
+      border: 3px double yellow;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
 button.header-button, input.header-searchBar {
   font-size: x-large;
   border: 3px solid grey;
