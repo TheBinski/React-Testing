@@ -43,6 +43,8 @@ h1.home-content-text {
   .nameInput {
     color: darkgrey;
     border: 3px solid darkgrey;
+    margin-right: 6px;
+    padding: 3px 6px;
 
     &:hover, &:focus {
       color: yellow;
@@ -53,6 +55,8 @@ h1.home-content-text {
   .nameInputButton {
     color: darkgrey;
     border: 3px solid darkgrey;
+    margin-left: 6px;
+    padding: 3px 6px;
 
     &:hover, &:focus {
       color: yellow;

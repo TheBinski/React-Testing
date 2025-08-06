@@ -46,7 +46,7 @@ export default function Home() {
         draggable
     />
     <h1 className="home-content-text">Enter Name below and Submit to place name as the Header Title!</h1>
-    <div className="nameInputButton">
+    <div className="headerChangerWrapper">
       <input className="nameInput" type="text" placeholder="Name..." value={name} onChange={updateName}/>
       <button className="nameInputButton" onClick={handleSubmit}>Submit Name</button>
     </div>
