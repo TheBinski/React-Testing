@@ -97,16 +97,16 @@ export default function Page2() {
 
     return (
     <div className="page2-Content">
-            <ToastContainer
-            position="top-right"
-            autoClose={3000}
-            hideProgressBar={true}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
+        <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
         />
         <div className="FinalTextWrapper">
             <h1 className="FinalText" style={finalStyle}>{name ? name : "Please enter a Name..."}</h1>
