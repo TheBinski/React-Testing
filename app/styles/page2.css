@@ -98,3 +98,27 @@
         }
     }
 }
+
+.toggleArea {
+    padding: 48px 0;
+
+    p {
+        font-size: x-large;
+    }
+
+    button.ToggleButton {
+        width: 75px;
+        margin-top: 12px;
+        font-size: x-large;
+        color: darkgrey;
+        padding: 3px 6px;
+        border: 2px solid darkgrey;
+        border-radius: 6px;
+
+        &:hover {
+            color: lightgrey;
+            border-color: lightgrey;
+            cursor: pointer;
+        }
+    }
+}

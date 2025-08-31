@@ -12,6 +12,7 @@ export default function Page2() {
     const [bRed, setBRed] = useState(0);
     const [bGreen, setBGreen] = useState(0);
     const [bBlue, setBBlue] = useState(0);
+    const [toggleState, setToggleState] = useState(false);
 
     const [finalStyle, setFinalStyle] = useState({
         color: 'white',
@@ -42,7 +43,7 @@ export default function Page2() {
         setName(event.target.value);
     }
 
-     function updateRed(event: any) {
+    function updateRed(event: any) {
         let newRed = event.target.value;
         if (newRed > 255 || newRed < 0) {
             toast.error("Red input must be between 0 and 255");
@@ -50,7 +51,7 @@ export default function Page2() {
         }
         setRed(newRed);
     }
-     function updateBRed(event: any) {
+    function updateBRed(event: any) {
         let newBRed = event.target.value;
         if (newBRed > 255 || newBRed < 0) {
             toast.error("Red input must be between 0 and 255");
@@ -59,7 +60,7 @@ export default function Page2() {
         setBRed(newBRed);
     }
 
-     function updateGreen(event: any) {
+    function updateGreen(event: any) {
         let newGreen = event.target.value;
         if (newGreen > 255 || newGreen < 0) {
             toast.error("Green input must be between 0 and 255");
@@ -77,7 +78,7 @@ export default function Page2() {
         setBGreen(newBGreen);
     }
 
-     function udpateBlue(event: any) {
+    function udpateBlue(event: any) {
         let newBlue = event.target.value;
         if (newBlue > 255 || newBlue < 0) {
             toast.error("Blue input must be between 0 and 255");
@@ -93,6 +94,10 @@ export default function Page2() {
             return;
         }
         setBBlue(newBBlue);
+    }
+
+    function handleToggle(event: any) {
+        setToggleState(!toggleState);
     }
 
     return (
@@ -147,7 +152,10 @@ export default function Page2() {
                 </div>
             </div>
         </div>
-        
+        <div className="toggleArea">
+            <p>Current Toggle value: {toggleState.toString()}</p>
+            <button className="ToggleButton" onClick={handleToggle}>{toggleState ? "Off" : "On"}</button>
+        </div>
     </div>
     );
 }
