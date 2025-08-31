@@ -8,10 +8,17 @@ export default function Page3(){
         setInputNum(event.target.value);
     }
 
+    
     function numCompare() {
-        console.log(inputNum);
-        console.log(number);
-        let newNum = inputNum;
+        console.log("input: ", inputNum);
+        console.log("num: ", number);
+
+        if(inputNum == number){
+            console.log("Congratulations! You guessed correctly!");
+        }
+        else {
+            console.log("Sorryl that is incorrect. Please guess again.");
+        }
         
     }
 
