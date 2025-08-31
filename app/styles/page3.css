@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.submitButton {
+    border: 1px solid red;
+    margin-left: 10px;
+ 
+}
+
+.resetButton {
+    border: 1px solid blueviolet;
+    margin-left: 15px;
+    &:disabled {
+        color: grey;
+        border-color: grey;
+    }
+    
+}
+
+.actionButton {
+    font-size: large;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.pageDiv {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
