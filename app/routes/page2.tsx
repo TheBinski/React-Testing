@@ -153,7 +153,7 @@ export default function Page2() {
             </div>
         </div>
         <div className="toggleArea">
-            <p>Current Toggle value: {toggleState.toString()}</p>
+            <p>Current Toggle Value: {toggleState.toString()}</p>
             <button className="ToggleButton" onClick={handleToggle}>{toggleState ? "Off" : "On"}</button>
         </div>
     </div>
