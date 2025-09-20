@@ -13,6 +13,8 @@ export default function Page2() {
     const [bGreen, setBGreen] = useState(0);
     const [bBlue, setBBlue] = useState(0);
     const [toggleState, setToggleState] = useState(false);
+    const [num1, setNum1] = useState(1);
+    const [num2, setNum2] = useState(1);
 
     const [finalStyle, setFinalStyle] = useState({
         color: 'white',
@@ -100,6 +102,32 @@ export default function Page2() {
         setToggleState(!toggleState);
     }
 
+    function handleNum1(event: any) {
+        setNum1(event.target.value);
+    }
+
+    function handleNum2(event: any) {
+        setNum2(event.target.value);
+    }
+
+    function handleDivide() {
+        try {
+            let toastMsg = num1 + " / " + num2 + " equals " + doDivide();
+            toast.info(toastMsg);
+        } catch (error) {
+            // console.error("Error happened during handleDivide: ", error.message);
+            toast.error(error.message);
+        }
+    }
+
+    function doDivide() {
+        if(num2 == 0) {
+            throw Error("DIVIDE BY ZERO");
+        }
+        let answer = num1 / num2;
+        return answer;
+    }
+
     return (
     <div className="page2-Content">
         <ToastContainer
@@ -155,6 +183,15 @@ export default function Page2() {
         <div className="toggleArea">
             <p>Current Toggle Value: {toggleState.toString()}</p>
             <button className="ToggleButton" onClick={handleToggle}>{toggleState ? "Off" : "On"}</button>
+        </div>
+        <div className="errorTestingArea">
+            <p>Enter 2 numbers to divide:</p>
+            <div className="mathArea">
+                <input type="number" value={num1} onChange={handleNum1}></input>
+                <p>/</p>
+                <input type="number" value={num2} onChange={handleNum2}></input>
+                <button onClick={handleDivide}>DIVIDE</button>
+            </div>
         </div>
     </div>
     );

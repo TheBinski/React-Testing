@@ -122,3 +122,42 @@
         }
     }
 }
+
+.errorTestingArea {
+    padding: 24px;
+
+    p {
+        font-size: x-large;
+    }
+
+    .mathArea {
+        display: flex;
+        align-items: center;
+        
+        input {
+            border: solid 2px darkgrey;
+            border-radius: 4px;
+            padding: 4px;
+            width: 50px;
+            font-size: large;
+            margin: 12px 12px 0 0;
+        }
+
+        p {
+            margin-right: 12px;
+            margin-top: 6px;
+        }
+
+        button {
+            font-size: large;
+            border: solid 2px darkgrey;
+            border-radius: 4px;
+            padding: 4px;
+            margin-top: 12px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
